@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-login: #cbe0ff;
+  --primary-color: #001c54;
+  --primary-color-hover: #002d8c;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* LOGIN */
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-login);
+}
+
+.login-form {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  padding: 30px 50px;
+}
+
+.login-form__align {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+input {
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.login-form__login {
+  padding: 10px 0 50px 0;
+  font-weight: normal;
+}
+
+.login-form__forgot {
+  text-align: end;
+  color: black;
+}
+
+.btn {
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn-primary {
+  background-color: #003bb1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.login-form__group-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+}
+
+.login-card {
+  position: relative;
+  background-color: white;
+  width: 50rem;
+  border-radius: 0 20px 20px 0;
+}
+
+.login-card__absolute {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 40rem;
+  height: 51rem;
+  left: 50%;
+  transform: translate(-50%);
+  top: -8%;
+  border-radius: 23px;
+  color: #f3f3f3;
+  padding: 52px 40px 40px 40px;
+  gap: 20px;
+}
+
+.login-card__absolute h1 {
+  font-size: 3rem;
+}
+
+.login-card__absolute p:nth-child(2) {
+  line-height: 30px;
+}
+
+.login-card__block {
+  margin-top: 20px;
+}
+
+.login-card__block p {
+  line-height: 30px;
+}
+
+.login-form__description {
+  color: #888
+}
